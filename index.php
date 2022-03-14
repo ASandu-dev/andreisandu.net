@@ -7,7 +7,8 @@
                 alt="" class="img-fluid"></a>
 
         <!-- .navbarStart -->
-
+        <nav id="navbar" class="navbar">
+            <ul>
             <?php /* Primary navigation */
                 wp_nav_menu( array(
                 'menu' => 'primary_menu',
@@ -18,8 +19,11 @@
                 'menu_class' => 'navbar',                
                 ))
             ?>
-          
-        <!-- .navbar -->
+            
+            <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+             </ul>
+               </nav>
+            <!-- .navbar -->
     </div>
 </header>
 <!-- End Header -->
