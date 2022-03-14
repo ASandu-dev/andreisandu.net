@@ -12,8 +12,8 @@
     <!-- Favicons -->
     <link href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.png" rel="icon">
     <link href="<?php echo get_template_directory_uri(); ?>/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-    <!-- <link href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css" rel="stylesheet"> -->
-    
+
+
 
     <!-- Google Fonts -->
     <link
@@ -25,11 +25,11 @@
 
 
     <!-- Firebase -->
-    
+
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/firebase-config.js" ></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/api-Keys.js" ></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/firebase-config.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/api-Keys.js"></script>
 
 </head>
 

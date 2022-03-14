@@ -55,4 +55,3 @@ function js_resources(){
 }
 add_action( 'wp_enqueue_scripts', 'style_resources' ); 
 add_action( 'wp_enqueue_scripts', 'js_resources' ); 
-
