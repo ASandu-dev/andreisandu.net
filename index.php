@@ -2,22 +2,23 @@
 
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">        
+    <div class="container d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo"><img src="<?php echo get_template_directory_uri();?>/assets/img/logo.png"
                 alt="" class="img-fluid"></a>
 
-        <nav id="navbar" class="navbar">
-            <ul>
-                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                <li><a class="nav-link scrollto" href="#about">About</a></li>
-                <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-                <li><a class="nav-link scrollto" href="#team">Team</a></li>                
-                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
+        <!-- .navbarStart -->
+
+            <?php /* Primary navigation */
+                wp_nav_menu( array(
+                'menu' => 'primary_menu',
+                'depth' => 2,
+                'container' => 'nav',
+                'container_class' => 'navbar',
+                'container_id'=>'navbar',
+                'menu_class' => 'navbar',                
+                ))
+            ?>
+          
         <!-- .navbar -->
     </div>
 </header>
