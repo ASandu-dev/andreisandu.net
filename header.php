@@ -12,7 +12,7 @@
     <!-- Favicons -->
     <link href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.png" rel="icon">
     <link href="<?php echo get_template_directory_uri(); ?>/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-    <link href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css" rel="stylesheet">
+    <!-- <link href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css" rel="stylesheet"> -->
     
 
     <!-- Google Fonts -->
