@@ -17,9 +17,9 @@
 
                   <div class="col-lg-4 col-md-6 footer-newsletter">
                       <h4>Join My Newsletter</h4>
-                      <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                      <p>Subscribe to stay informed with my latest achievements</p>
                       <form id="contactForm" method="post">
-                          <input id="sub-email" name="email" required type="email">
+                          <input id="sub-email" name="email" required type="email" placeholder="youremail@emailprovider.com">
                           <input type="submit" value="Submit">
                       </form>
                   </div>
