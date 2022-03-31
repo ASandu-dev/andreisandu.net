@@ -69,3 +69,4 @@ if ( ! function_exists( 'mytheme_register_nav_menu' ) ) {
 
 add_action( 'wp_enqueue_scripts', 'style_resources' ); 
 add_action( 'wp_enqueue_scripts', 'js_resources' ); 
+add_theme_support( 'post-thumbnails' );
