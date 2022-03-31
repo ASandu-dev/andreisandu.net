@@ -270,30 +270,40 @@
                 <div class="col-lg-12 d-flex justify-content-center">
                     <ul id="portfolio-flters">
                         <li data-filter="*" class="filter-active">All</li>
-                        <li data-filter=".filter-app">App</li>
-                        <li data-filter=".filter-card">Web</li>
+                        <li data-filter=".filter-app">Web</li>
+                        <li data-filter=".filter-card">Android</li>
                         <li data-filter=".filter-web">Misc</li>
                     </ul>
                 </div>
             </div>
 
             <div class="row portfolio-container">
+                
+                <!-- Loopp for web projects -->
+            <?php if(have_posts()):
+                    while(have_posts()) : the_post(); ?>
+
+
+
                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                     <div class="portfolio-wrap">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/portfolio-1.jpg"
+                        <img src="<?php the_post_thumbnail_url();?>"
                             class="img-fluid" alt="" />
                         <div class="portfolio-info">
-                            <h4>App 1</h4>
-                            <p>App</p>
+                            <h4><?php the_title(); ?></h4>
+                            <p></p>
                         </div>
                         <div class="portfolio-links">
                             <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/portfolio-1.jpg"
                                 data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i
                                     class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            <a href="<?php echo get_post_meta($post -> ID, 'View on GitHub', true); ?>" title="View on GitHub"><i class="bx bx-link"></i></a>
                         </div>
                     </div>
                 </div>
+
+                <?php endwhile;
+                        endif; ?>
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                     <div class="portfolio-wrap">
